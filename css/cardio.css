@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 body {
-	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif
 	font-size: 14px;
 	overflow-x: hidden;
 	color: #2a3237;
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	position: relative;
 	margin: 10px 0;
 }
