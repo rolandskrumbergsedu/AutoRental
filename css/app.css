@@ -1,0 +1,14 @@
+.navbar-brand {
+    color: white;
+    font-size: 26px;
+}
+
+.title-image {
+    max-height: 200px;
+    max-width: 400px;
+}
+
+.title-row {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
