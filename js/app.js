@@ -21,7 +21,7 @@ angular.module('autoApp')
                         $scope.postLoading = false;
                         
                         var postResult = response.status;
-                        if (postResult === '200') {
+                        if (postResult === 200) {
                             $scope.postSuccess = true;
                         } else {
                             $scope.postError = true;
