@@ -480,8 +480,13 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<p>{{postResult}}</p>
-					<button type="submit" class="btn btn-default" ng-click="sendReservation()">Rezervēt</button>
+					<p class="postSpinner" ng-if="postLoading">
+						<i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
+						<span class="sr-only">Loading...</span>
+					</p>
+					<p class="postSuccess" ng-if="postSuccess">Rezervācija veikta! Mēs ar jums sazināmies tuvāko 12h laikā.</p>
+					<p class="postError" ng-if="postError">Rezervācijas laikā radās kļūda! Ja tā atkārtojas, lūdzam rezervāciju veikt pa tālruni.</p>
+					<button type="submit" class="btn btn-default" ng-click="sendReservation()" ng-if="!(postSuccess || postError)">Rezervēt</button>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Aizvērt</button>
 				</div>
 			</div>

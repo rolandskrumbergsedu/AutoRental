@@ -7,11 +7,26 @@ angular.module('autoApp')
         '$scope', '$http' , function($scope, $http) {
             
             $scope.request = {};
+            $scope.postLoading = false;
+            $scope.postSuccess = false;
+            $scope.postError = false;
             
             $scope.sendReservation = function() {
+                
+                $scope.postLoading = true;
+                
                 $http.post('http://autorentalapi.azurewebsites.net/api/reservation', $scope.request)
                     .then(function (response) {
-                        $scope.postResult = response.status;
+                        
+                        $scope.postLoading = false;
+                        
+                        var postResult = response.status;
+                        if (postResult === '200') {
+                            $scope.postSuccess = true;
+                        } else {
+                            $scope.postError = true;
+                        }
+                        
                     });
             }
             

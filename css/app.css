@@ -25,6 +25,20 @@
     color: white;
 }
 
+.postSpinner {
+    color: white;
+}
+
+.postSuccess {
+    color: green;
+    font-size: 16px;
+}
+
+.postError {
+    color: red;
+    font-size: 16px;
+}
+
 /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
         .title-image {
