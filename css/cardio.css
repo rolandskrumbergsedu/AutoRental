@@ -783,9 +783,9 @@ footer .social-footer li:hover a {
 	position: relative;
 	padding: 45px 30px;
 	text-align: center;
-	background: url('../img/popup.jpg');
 	box-shadow: none;
 	border-radius: 2px;
+	background-color: rgba(0, 168, 255, 0.9)
 }
 
 .modal-popup a.close-link {
