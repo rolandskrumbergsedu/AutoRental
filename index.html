@@ -487,7 +487,7 @@
 					<p class="postSuccess" ng-if="postSuccess">Rezervācija veikta! Mēs ar jums sazināmies tuvāko 12h laikā.</p>
 					<p class="postError" ng-if="postError">Rezervācijas laikā radās kļūda! Ja tā atkārtojas, lūdzam rezervāciju veikt pa tālruni.</p>
 					<button type="submit" class="btn btn-default" ng-click="sendReservation()" ng-if="!(postSuccess || postError)">Rezervēt</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Aizvērt</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cleanPrevious()">Aizvērt</button>
 				</div>
 			</div>
 		</div>

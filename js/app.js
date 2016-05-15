@@ -30,6 +30,13 @@ angular.module('autoApp')
                     });
             }
             
+            $scope.cleanPrevious = function() {
+                $scope.request = {};
+                $scope.postLoading = false;
+                $scope.postSuccess = false;
+                $scope.postError = false;
+            }
+            
         }
     ]);
 
