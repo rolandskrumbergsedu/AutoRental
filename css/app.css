@@ -8,6 +8,12 @@
     padding-bottom: 40px; 
 }
 
+.photo-button {
+    margin-top: 10px;
+   padding-left: 88px;
+   padding-right: 87px;
+}
+
 .navbar-brand {
     color: white;
     font-size: 26px;

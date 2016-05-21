@@ -1,0 +1,12 @@
+foto galerija
+SEO 
+Foto optimizâcija
+
+peteris@cheapcarrent.lv
+Parole2014
+
+CNAME
+Hostname:
+awverify.youthtechlatvia.azurewebsites.net 
+Alias:
+awverify.www.youthtech.lv
