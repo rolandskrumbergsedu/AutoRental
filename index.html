@@ -48,6 +48,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/scrolling.js"></script>
 
 </head>
 
@@ -84,24 +85,37 @@
 							<div class="phone-number-container">
 								<h4 class="white">+371 29358060</h4>
 								<h4 class="white">+371 29934566</h4>
+								<h4 class="white">reservations@cheapcarrental.lv</h4>
 							</div>
 						</div>
 					</div>
 					<div class="row title-row">
 						<div class="col-xs-12 text-center">
-							<h2 class="white typed">Lētākā auto noma Rīgā!</h2>
+							<h2 class="white typed">Auto noma Rīgā!</h2>
 						</div>
 					</div>
-					<div class="row title-images">
+					<div id="main-image" class="row title-images">
 						<div class="col-sm-6 text-center">
-							<h5 class="white">Toyota Corolla</h4>
-							<img src="img/corolla/corolla_main_480.jpg" alt="" class="img-responsive title-image center-image">
-							<h5 class="white">No 20 Eur/dienā</h4>
+							<a href="#cars">
+								<h5 class="white">Toyota Corolla</h5>
+							</a>
+							<a href="#cars">
+								<img src="img/corolla/corolla_main_480.jpg" alt="" class="img-responsive title-image center-image">
+							</a>
+							<a href="#main-image">
+								<h5 class="white">No 20 Eur/dienā</h5>
+							</a>
 						</div>
 						<div class="col-sm-6 text-center">
-							<h5 class="white">Toyota Rav 4</h4>
-							<img src="img/rav4/rav4_main_480.jpg" alt="" class="img-responsive title-image center-image">
-							<h5 class="white">No 33 Eur/dienā</h4>
+							<a href="#cars">
+								<h5 class="white">Toyota Rav 4</h5>
+							</a>
+							<a href="#cars">
+								<img src="img/rav4/rav4_main_480.jpg" alt="" class="img-responsive title-image center-image">
+							</a>
+							<a href="#main-image">
+								<h5 class="white">No 33 Eur/dienā</h5>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -174,7 +188,7 @@
 											<h5 class="regular white">&gt;30 diennaktīm</h5>
 										</div>
 										<div class="col-xs-5 text-right">
-											<h5 class="white">35 Euro</h5>
+											<h5 class="white">33 Euro</h5>
 										</div>
 									</div>
 								</div>
@@ -493,6 +507,13 @@
 						</div>
 						<div class="modal-body">
 							<form role="form">
+								<div class="form-group">
+									<label for="auto">Izvēlētais auto:</label>
+									<select id="auto" name="auto" class="form-control" ng-model="request.Auto">
+										<option value="ToyotaRav4">Toyota Rav 4</option>
+										<option value="ToyotaCorolla">Toyota Corolla</option>
+									</select>
+								</div>
 								<div class="form-group">
 									<label for="name">Vārds, uzvārds:</label>
 									<input type="text" class="form-control" id="name" ng-model="request.Name">
